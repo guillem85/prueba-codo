@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Nosotros</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navbar">
+                <li><a href="../index.html">Home</a> </li>
+                <li><a href="hardware.html">Hardware</a>  </li>
+                <li><a href="software.html"  target="_blank">Software</a> </li>
+                <li>Nosotros</li>
+            </ul>       
+        </nav>
+    </header>
+    <form action="">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <label for="apellido">Apellido:</label> 
+            <input type="text" id="apellido" name="apellido" required>
+            <label for="nombre">Nombre:</label> 
+            <input type="text" id="nombre" name="nombre" required>
+            <br><br>
+            <label for="dni">DNI:</label>
+            <input type="number" name="dni">
+            <label for="tramite">Nro trámite:</label>
+            <input type="password" name="tramite">
+            <label for="fecNac">Fecha de Nacimiento:</label>
+            <input type="date" name="fecNac">
+            <br><br>
+            <label for="email">e-Mail:</label>
+            <input type="email" name="email">
+            <label for="adjuntar">Adjuntar foto:</label>
+            <input type="file" name="adjuntar">
+        </fieldset>
+        <br><br>
+        <label for="turno"><b>Seleccionar turno:</b> </label>
+        <select name="turno" id="turno" size="4">
+            <option value="1">Mañana</option>
+            <option value="2">Tarde</option>
+            <option value="3">Vespertino</option>
+            <option value="4">Nocturno</option>
+        </select>
+        <br><br>
+        <label for="op"><b>Conocimientos previos:</b> </label>
+        <input type="checkbox" name="op" value="1"> HTML
+        <input type="checkbox" name="op" value="2"> CSS
+        <input type="checkbox" name="op" value="3"> JavaScript
+        <br><br>
+        <label for="rb"><b>Zona de residencia:</b> </label>
+        <input type="radio" name="rb" value="1"> CABA
+        <input type="radio" name="rb" value="2"> Gran Buenos Aires
+        <input type="radio" name="rb" value="3"> Prov Buenos Aires
+        <br><br>
+        <label for="color">Color de ojos:</label>
+        <input type="color" name="color">
+        <label for="hijos">Cantidad de hijos:</label>
+        <input type="number" name="hijos" min="1" max="10">
+        <br><br>
+        <input type="checkbox" name="condiciones">Acepto términos y condiciones
+        <br><br>
+        <input type="submit" value="Enviar datos">
+        <input type="reset" value="Borrar">
+    </form>
+</body>
+</html>
